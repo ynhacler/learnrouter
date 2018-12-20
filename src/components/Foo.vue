@@ -1,7 +1,8 @@
 <template>
   <div class="foo">
     <h1>{{ msg }}</h1>
-    <div>User {{username}}</div>
+    <div class="bb">User {{username}}</div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -27,5 +28,18 @@ h1, h2 {
   font-weight: normal;
   background: black;
   color: white;
+  width:500px;
+  margin:0 auto;
+
+}
+.bb{
+    background:green;
+    color:grey;
+}
+.foo{
+    background: greenyellow;
+    margin: 5px auto;
+    width: 600px;
+    padding: 20px;
 }
 </style>
