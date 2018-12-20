@@ -10,6 +10,7 @@ const UserPosts = { template: '<div>Posts</div>' }
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -32,7 +33,7 @@ export default new Router({
       ],
     },
     {
-      path: '/bar',
+      path: '/bar/:userId',
       name: 'Bar',
       component: Bar
     }

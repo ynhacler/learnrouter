@@ -1,6 +1,7 @@
 <template>
   <div class="bar">
     <h1>{{ msg }}</h1>
+    <p>{{this.$route.params.userId}}</p>
   </div>
 </template>
 
