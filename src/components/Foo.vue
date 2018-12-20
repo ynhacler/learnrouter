@@ -1,6 +1,7 @@
 <template>
   <div class="foo">
     <h1>{{ msg }}</h1>
+    <div>User {{username}}</div>
   </div>
 </template>
 
@@ -11,7 +12,12 @@ export default {
     return {
       msg: 'Foo11111111111'
     }
-  }
+  },
+  computed:{
+    username(){
+      return this.$route.params.id
+    }
+  },
 }
 </script>
 
